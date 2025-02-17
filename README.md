@@ -6,10 +6,10 @@
 
 # Table of content
 
-- [Minimum Requirement](https://github.com/wahyuunt-organization/private_package/edit/main/README.md#minimum-requirement-)
-- [Setup](https://github.com/wahyuunt-organization/private_package?tab=readme-ov-file#setup)
-- [How To Use](https://github.com/wahyuunt-organization/private_package/edit/main/README.md#how-to-use)
-- [Example](https://github.com/wahyuunt-organization/private_package/edit/main/README.md#example)
+- [Minimum Requirement](https://github.com/wahyuunt-organization/private_package#minimum-requirement-)
+- [Setup](https://github.com/wahyuunt-organization/private_package#setup)
+- [How To Use](https://github.com/wahyuunt-organization/private_package#how-to-use)
+- [Example](https://github.com/wahyuunt-organization/private_package#example)
 
 # minimum requirement :
     - Flutter x.x.x
