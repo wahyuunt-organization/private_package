@@ -1,39 +1,120 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Flutter TDS Permission
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+**version : 1.0.0**
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+# [Change log](https://github.com/wahyuunt-organization/private_package/releases)
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# Table of content
 
-## Features
+- [Minimum Requirement](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
+- [Setup](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
+    - [Android](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
+    - [iOS](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
+- [How To Use](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
+    - [Available Permission](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
+    - [Get Status](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
+    - [Request Permission](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
+- [Example](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- minimum requirement :
+    - Flutter x.x.x
+    - Android API 19+
+    - iOS 16
 
-## Getting started
+# Setup
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```bash
+flutter pub add tds_permission
 ```
 
-## Additional information
+- Android
+    
+    ```json
+    
+    ```
+    
+- iOS
+    
+    ```json
+    
+    ```
+    
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+# How To Use
+
+---
+
+### Available Permission
+
+```dart
+/**
+ * Enum representing the different types of permissions that can be requested
+ * by the plugin.  Each value corresponds to a specific permission, such as
+ * location access, notification access, etc.
+ */
+enum TDSPermission {
+	//Permission to access the device's location.
+	location,
+	
+	//Permission to send and receive notifications.
+	notification,
+	
+	//Permission to access the device's camera.
+	camera,
+	
+	//Permission to use Bluetooth functionality.
+	bluetooth,
+	
+	//Permission to access the device's storage.
+	storage,
+	
+	//Permission to access the user's contacts.
+	contact,
+	
+	//Permission to access media files (images, videos, etc.).
+	media,
+	
+	//Permission to access the device's microphone/audio input.
+	audio
+}
+```
+
+### Get Status
+
+with .status, you can get status permission. that available status is `.isAvailable` ,`.isDenied` ,`.isReject` , `.etc`
+
+```dart
+// Request the status of a specific permission using the TDSPermission package.
+// Parameters:
+// - "iOS": Specifies the platform for which permission is being checked.
+// - .notification: Specifies the type of permission being requested (notification permission).
+// The 'await' keyword ensures that the function waits for the status result before proceeding.
+var status = await TDSPermission("iOS", .notification).status();
+
+if (status[.location] == .isAvailable) {
+	//todo: handle if permission is available
+}
+```
+
+### Request Permission
+
+```dart
+// Request camera permission using the TDSPermission package.
+// Parameters:
+// - "iOS": Specifies that the permission request is for the iOS platform.
+// - .camera: Specifies the type of permission being requested (camera permission).
+TDSPermission("iOS", .camera).request({ (status) {
+    
+    // Check if the permission status is available
+    if (status == .isAvailable) {
+        // TODO: Handle the case when the permission is granted and available
+    }
+
+}});
+```
+
+# Example
+
+```json
+
+```
