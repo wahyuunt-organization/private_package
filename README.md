@@ -6,17 +6,12 @@
 
 # Table of content
 
-- [Minimum Requirement](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
-- [Setup](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
-    - [Android](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
-    - [iOS](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
-- [How To Use](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
-    - [Available Permission](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
-    - [Get Status](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
-    - [Request Permission](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
-- [Example](https://www.notion.so/Flutter-TDS-Permission-1969b636c7a680dfbffdd101f437b5b6?pvs=21)
+- [Minimum Requirement](https://github.com/wahyuunt-organization/private_package/edit/main/README.md#minimum-requirement-)
+- [Setup](https://github.com/wahyuunt-organization/private_package?tab=readme-ov-file#setup)
+- [How To Use](https://github.com/wahyuunt-organization/private_package/edit/main/README.md#how-to-use)
+- [Example](https://github.com/wahyuunt-organization/private_package/edit/main/README.md#example)
 
-- minimum requirement :
+# minimum requirement :
     - Flutter x.x.x
     - Android API 19+
     - iOS 16
